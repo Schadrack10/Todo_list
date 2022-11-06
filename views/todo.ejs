@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo list</title>
+    <script
+      src="https://code.jquery.com/jquery-3.6.1.min.js"
+      integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="/assets/styles.css" />
+  </head>
+  <body>
+    <!-- <h1> my to do list</h1> -->
+    <div id="todo-table">
+      <form id="">
+        <div style="display: flex;">
+          <input
+            type="text"
+            name="item"
+            placeholder="Add new items"
+            required
+          />
+          <button type="submit">add item</button>
+        </div>
+      </form>
+      <ul>
+       <% data.map(item =>{  %>
+           <li>
+            <%= item.item %>
+           </li>
+       <% }) %>
+      </ul>
+    </div>
+
+    <script type="text/javascript" src="assets/todo-list.js"></script>
+  </body>
+</html>
